@@ -9,7 +9,7 @@ function destructivelyAppendCat(name) {
     return cats;
 
 
-}
+    }
 console.log(destructivelyAppendCat('Ralph'));
 
 
@@ -18,7 +18,6 @@ function destructivelyPrependCat(name) {
     return cats;
 }
 console.log(destructivelyPrependCat('Bob'));
-
 
 function destructivelyRemoveLastCat() {
     cats.pop();
@@ -32,25 +31,41 @@ function destructivelyRemoveFirstCat() {
     return cats;
 }
 console.log(destructivelyRemoveFirstCat());
+let catAppendCat=[];
+let cat2 =catAppendCat.concat(cats);
+console.log(cat2);
+function appendCat(name){
+   cat2.push(`${name}`);
+   return cat2;
+}
+console.log(appendCat("Broom"));
 
-const cat = [];
-
+let catPrepend = [];
+catPrepend = catPrepend.concat(cats);
 function prependCat(name) {
-    cat.push([...cats]);
-    cat.unshift(`${name}`);
-    return cat;
+    catPrepend.unshift(`${name}`);
+  return catPrepend;
+    
 }
 console.log(prependCat("Arnold"));
+let cat =[];
+cat = cat.concat(cats);
 
 function removeLastCat() {
-    cat[1].pop();
-    return cat;
+  let cat3 = [];
+  let i = cat.pop();
+  cat3.push(i);
+  return cat3;
 }
 console.log(removeLastCat());
-
+let catRLC = [];
+catRLC = catRLC.concat(cats);
 function removeFirstCat() {
-    cat[1].shift();
-    return cat;
+  let cat4 = [];
+  let i = catRLC.shift();
+  cat4.push(i);
+
+  return cat4;
 }
 console.log(removeFirstCat());
 console.log(cats);
