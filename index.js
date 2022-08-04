@@ -1,7 +1,7 @@
 // Write your solution here!
 const cats = [];
 cats.push('Milo', 'Otis', 'Garfield');
-console.log(cats);
+cats;
 
 function destructivelyAppendCat(name) {
 
@@ -10,35 +10,35 @@ function destructivelyAppendCat(name) {
 
 
     }
-console.log(destructivelyAppendCat('Ralph'));
+destructivelyAppendCat('Ralph');
 
 
 function destructivelyPrependCat(name) {
     cats.unshift(`${name}`);
     return cats;
 }
-console.log(destructivelyPrependCat('Bob'));
+destructivelyPrependCat('Bob');
 
 function destructivelyRemoveLastCat() {
     cats.pop();
     return cats;
 }
-console.log(destructivelyRemoveLastCat());
+destructivelyRemoveLastCat();
 
 
 function destructivelyRemoveFirstCat() {
     cats.shift();
     return cats;
 }
-console.log(destructivelyRemoveFirstCat());
+destructivelyRemoveFirstCat();
 let catAppendCat=[];
 let cat2 =catAppendCat.concat(cats);
-console.log(cat2);
+cat2;
 function appendCat(name){
    cat2.push(`${name}`);
    return cat2;
 }
-console.log(appendCat("Broom"));
+appendCat("Broom");
 
 let catPrepend = [];
 catPrepend = catPrepend.concat(cats);
@@ -47,7 +47,7 @@ function prependCat(name) {
   return catPrepend;
     
 }
-console.log(prependCat("Arnold"));
+prependCat("Arnold");
 let cat =[];
 cat = cat.concat(cats);
 
@@ -55,9 +55,9 @@ function removeLastCat() {
   let cat3 = [];
   let i = cat.pop();
   cat3.push(i);
-  return cat3;
+  return cat;
 }
-console.log(removeLastCat());
+removeLastCat();
 let catRLC = [];
 catRLC = catRLC.concat(cats);
 function removeFirstCat() {
@@ -65,7 +65,7 @@ function removeFirstCat() {
   let i = catRLC.shift();
   cat4.push(i);
 
-  return cat4;
+  return catRLC;
 }
-console.log(removeFirstCat());
-console.log(cats);
+removeFirstCat();
+cats;
