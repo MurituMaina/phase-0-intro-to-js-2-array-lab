@@ -1,6 +1,11 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+console.log("Welcome to Programiz!");
+
 // Write your solution here!
 const cats = [];
-cats.push('Milo', 'Otis', 'Garfield');
+cats.push("Milo", "Otis", "Garfield");
 cats;
 
 function destructivelyAppendCat(name) {
@@ -31,41 +36,54 @@ function destructivelyRemoveFirstCat() {
     return cats;
 }
 destructivelyRemoveFirstCat();
-let catAppendCat=[];
-let cat2 =catAppendCat.concat(cats);
-cat2;
+
+
+let cat2=[];
+cat2 = cat2.concat(cats)
+
 function appendCat(name){
-   cat2.push(`${name}`);
-   return cat2;
+ if (cat2.indexOf(name)=== -1){
+ cat2.push(name);
+ console.log(cat2)
+ return cat2; 
+}
+ 
 }
 appendCat("Broom");
+// console.log(cats);
+// console.log(cat2);
+
 
 let catPrepend = [];
 catPrepend = catPrepend.concat(cats);
 function prependCat(name) {
-    catPrepend.unshift(`${name}`);
-  return catPrepend;
+   catPrepend.unshift(name);
+  console.log(catPrepend);
+    return catPrepend;
     
 }
 prependCat("Arnold");
-let cat =[];
-cat = cat.concat(cats);
+
+
+let cat3 =[];
+cat3 = cat3.concat(cats);
 
 function removeLastCat() {
-  let cat3 = [];
-  let i = cat.pop();
-  cat3.push(i);
-  return cat;
+ let i =  cat3.pop();
+ let rmvLastCat= cat3;
+  console.log(rmvLastCat)
+  return rmvLastCat;
+  
 }
 removeLastCat();
-let catRLC = [];
-catRLC = catRLC.concat(cats);
-function removeFirstCat() {
-  let cat4 = [];
-  let i = catRLC.shift();
-  cat4.push(i);
 
-  return catRLC;
+let cats4 = [];
+cats4 = cats4.concat(cats);
+function removeFirstCat() {
+  let i = cats4.shift();
+  let rmvFirstCat = cats4;
+console.log(rmvFirstCat)
+  return rmvFirstCat;
 }
 removeFirstCat();
-cats;
+
